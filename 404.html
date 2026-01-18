@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Assesor-CDACC</title>
+
+    <!-- SEO Meta -->
+    <meta name="description"
+        content="The page you're looking for doesn't exist. Return to Assesor-CDACC - the CDACC notes app for students.">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Poppins Font -->
+    <link rel="preload" href="/assests/fonts/Poppins/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
+     
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#F59E0B',
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom 404 styles */
+        .error-emoji {
+            font-size: 100px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .error-bg {
+            background: linear-gradient(135deg, #FEF3C7 0%, #FFFFFF 50%, #FFFBEB 100%);
+        }
+
+        .broken-book {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+        }
+
+        .page {
+            position: absolute;
+            width: 80px;
+            height: 100px;
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-1 {
+            transform: rotate(-15deg);
+            z-index: 3;
+            top: 10px;
+            left: 20px;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .page-2 {
+            transform: rotate(-5deg);
+            z-index: 2;
+            top: 5px;
+            left: 30px;
+            animation: float 3.5s ease-in-out infinite reverse;
+        }
+
+        .page-3 {
+            transform: rotate(5deg);
+            z-index: 1;
+            top: 0;
+            left: 40px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+       
+    </style>
+</head>
+
+<body class="font-poppins error-bg min-h-screen flex flex-col">
+
+    <!-- Navigation -->
+    <nav class="py-4 px-6">
+        <div class="max-w-7xl mx-auto">
+            <a href="/" class="flex items-center space-x-2 w-fit">
+                <!-- <div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
+                    <span class="text-primary font-bold">A</span>
+                </div> -->
+                <span class="text-xl font-bold text-primary">Assesor‑CDACC</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center px-6 py-12">
+        <div class="max-w-4xl mx-auto text-center">
+
+            <!-- Animated Emoji or Graphic -->
+            <div class="mb-8">
+                <div class="broken-book mb-8">
+                    <div class="page page-1"></div>
+                    <div class="page page-2"></div>
+                    <div class="page page-3"></div>
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-6xl">❓</div>
+                </div>
+
+                <div class="text-8xl mb-4">
+                    <span class="inline-block animate-bounce-slow">4</span>
+                    <span class="inline-block mx-2 text-primary animate-pulse">0</span>
+                    <span class="inline-block animate-bounce-slow" style="animation-delay: 0.2s">4</span>
+                </div>
+            </div>
+
+            <!-- Error Message -->
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                Page <span class="text-primary">Not Found</span>
+            </h1>
+
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Oops! The page you're looking for seems to have wandered off like a missing study note.
+                It might have been moved, deleted, or never existed.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="/"
+                    class="px-8 py-3 rounded-xl bg-primary text-white font-medium shadow-lg hover:scale-105 transition transform inline-flex items-center gap-2">
+                    Back to Home
+                </a>
+
+                <a href="/#download"
+                    class="px-8 py-3 rounded-xl border border-primary text-primary font-medium hover:bg-primary hover:text-white transition inline-flex items-center gap-2">
+                    Download App
+                </a>
+
+                <button onclick="history.back()"
+                    class="px-8 py-3 rounded-xl bg-gray-100 text-gray-700 font-medium hover:bg-gray-200 transition inline-flex items-center gap-2">
+                    Go Back
+                </button>
+            </div>
+
+            <!-- Stats -->
+            <div class="mt-12 grid grid-cols-3 gap-4 max-w-md mx-auto">
+                <div class="text-center p-4">
+                    <div class="text-2xl font-bold text-primary">15+ MB</div>
+                    <div class="text-sm text-gray-600">App Size</div>
+                </div>
+                <div class="text-center p-4">
+                    <div class="text-2xl font-bold text-primary">5+</div>
+                    <div class="text-sm text-gray-600">CDACC Courses</div>
+                </div>
+                <div class="text-center p-4">
+                    <div class="text-2xl font-bold text-primary">100%</div>
+                    <div class="text-sm text-gray-600">Free</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 px-6 bg-gray-900 text-gray-300">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="mb-2">© 2026 Assesor-CDACC. CDACC is a registered trademark.</p>
+            <p class="text-sm opacity-70">Error 404 - Page Not Found</p>
+
+            <div class="mt-4 text-xs opacity-50">
+                <p>If you believe this page should exist, please contact support with the URL you tried to access.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
