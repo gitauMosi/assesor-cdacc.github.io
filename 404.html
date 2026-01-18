@@ -107,11 +107,9 @@
     <!-- Navigation -->
     <nav class="py-4 px-6">
         <div class="max-w-7xl mx-auto">
-            <a href="/" class="flex items-center space-x-2 w-fit">
-                <!-- <div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
-                    <span class="text-primary font-bold">A</span>
-                </div> -->
-                <span class="text-xl font-bold text-primary">Assesor‑CDACC</span>
+            <a href="/" class="flex items-center space-x-2 w-fit group">
+                <img src="/assests/svgs/logo.svg" alt="Assesor-CDACC Logo" class="w-8 h-8 transition-transform group-hover:scale-110">
+                <span class="text-xl font-bold text-dark group-hover:text-primary transition-colors">Assesor‑CDACC</span>
             </a>
         </div>
     </nav>
@@ -183,13 +181,33 @@
     </main>
 
     <!-- Footer -->
-    <footer class="py-6 px-6 bg-gray-900 text-gray-300">
-        <div class="max-w-6xl mx-auto text-center">
-            <p class="mb-2">© 2026 Assesor-CDACC. CDACC is a registered trademark.</p>
-            <p class="text-sm opacity-70">Error 404 - Page Not Found</p>
+    <footer class="py-8 px-6 bg-dark text-gray-300">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-6 mb-6">
+                <!-- Brand -->
+                <div class="flex items-center gap-3">
+                    <img src="/assests/svgs/logo.svg" alt="Assesor-CDACC Logo" class="w-8 h-8">
+                    <span class="text-lg font-bold text-white">Assesor‑CDACC</span>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="flex justify-center gap-6 text-sm">
+                    <a href="/" class="text-gray-400 hover:text-primary transition-colors">Home</a>
+                    <a href="/#download" class="text-gray-400 hover:text-primary transition-colors">Download</a>
+                    <a href="/#features" class="text-gray-400 hover:text-primary transition-colors">Features</a>
+                </div>
 
-            <div class="mt-4 text-xs opacity-50">
-                <p>If you believe this page should exist, please contact support with the URL you tried to access.</p>
+                <!-- Contact -->
+                <div class="flex justify-end">
+                    <a href="mailto:support@assessor-cdacc.com" class="text-sm text-primary hover:text-amber-400 transition-colors">
+                        support@assessor-cdacc.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-6 text-center">
+                <p class="text-sm text-gray-400">© 2026 Assesor-CDACC. CDACC is a registered trademark.</p>
+                <p class="text-xs text-gray-500 mt-1">Error 404 - Page Not Found</p>
             </div>
         </div>
     </footer>
